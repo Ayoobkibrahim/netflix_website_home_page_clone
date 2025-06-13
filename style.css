@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    border-radius: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.header {
+    width: 84%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(assets/banner-image.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.language-btn {
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border: 1px solid gray;
+    color: #fff;
+    padding: 7px 20px;
+    background: rgba(20, 20, 20, 0.8);
+}
+
+.language-btn i {
+    margin-right: 8px;
+}
+
+
+nav button {
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.language-btn img {
+    width: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+.header-content {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 800;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+    max-width: 500px;
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    margin-bottom: 15px;
+}
+
+.header-content email {
+    display: flex;
+    gap: 5px;
+    border: 0;
+    outline: 0;
+    align-items: center;
+}
+
+.email input {
+    padding: 16px 70px;
+    outline: none;
+    border: 1px solid grey;
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    flex-direction: column;
+}
+
+.email button {
+    background: #db0001;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 16px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.email button i {
+    margin-left: 8px;
+}
+
+.curve-border {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #1a0a2e 0%, #3a006f 25%, #ff007f 50%, #3a006f 75%, #1a0a2e 100%);
+    border-top-left-radius: 100% 1000px;
+    border-top-right-radius: 100% 1000px;
+}
+
+
+section {
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1 {
+    margin-left: 20px;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+}
+.slider ::-webkit-scrollbar{
+    display: none;
+}
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+
+.scroll-btn {
+    position: absolute;
+    margin-top: 6.5%;
+    font-size: 30px;
+    background-color: rgba(56, 56, 56, 0.6);
+    border: none;
+    color: white;
+    padding: 30px 5px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+.scroll-btn.right {
+    right: 100px;
+}
+
+.scroll-btn.left {
+    left: 100px;
+    display: none;
+}
+
+.card {
+    position: relative;
+    min-width: 190px;
+    height: 240px;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: visible;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .number {
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+.instruction-section {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    gap: 18px;
+    margin-bottom: 20px;
+
+}
+
+.instruction-section .instruction-card {
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction-card h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 23px;
+    font-size: 500;
+    margin-right: 10px;
+}
+
+.instruction-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.instruction-card img {
+    margin-top: 50px;
+    margin-left: 70%;
+    height: 70px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.quetion-section li {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.quetion-section div {
+    background: rgba(66, 61, 61, 0.7);
+    margin: 10px;
+    padding: 15px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.quetion-section li :hover {
+    cursor: pointer;
+    background: rgb(94, 91, 91);
+}
+
+.quetion-section .plus {
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    transition: transform 0.3s ease;
+}
+
+
+.footer-section {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 12px;
+    
+}
+
+.footer-links ul {
+    list-style: none;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-links li{
+    margin: 10px;
+} 
+
+.language-select select {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.netflix-india {
+    /* margin: 10px 0; */
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.disclaimer a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+.footer-section .que-call {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.footer-section .language-select{
+    margin-left: 40px;
+}
+.down-mail p{
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.down-mail {
+    margin-left: 25%;
+    margin-top: 5%; 
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.down-mail input {
+    width: 30%;
+
+}
+
+.down-mail button{
+    height: 50px;
+    font-size: 16px;
+}
