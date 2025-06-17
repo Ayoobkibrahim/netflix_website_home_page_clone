@@ -83,42 +83,6 @@
             </button>
         </div>
 
-
-        <script>
-            const scrollContainer = document.getElementById("scrollContainer");
-            const scrollLeftBtn = document.getElementById("scrollLeftBtn");
-            const scrollRightBtn = document.getElementById("scrollRightBtn");
-
-            function scrollLeft() {
-                scrollContainer.scrollBy({ left: -1200, behavior: "smooth" });
-            }
-
-            function scrollRight() {
-                scrollContainer.scrollBy({ left: 1200, behavior: "smooth" });
-            }
-
-            scrollLeftBtn.onclick = scrollLeft;
-            scrollRightBtn.onclick = scrollRight;
-
-            function updateScrollButtons() {
-                const scrollLeft = scrollContainer.scrollLeft;
-                const scrollWidth = scrollContainer.scrollWidth;
-                const clientWidth = scrollContainer.clientWidth;
-
-                if (scrollLeft <= 0) {
-                    scrollLeftBtn.style.display = "none";
-                    scrollRightBtn.style.display = "block";
-                } else if (scrollLeft + clientWidth >= scrollWidth - 1) {
-                    scrollRightBtn.style.display = "none";
-                    scrollLeftBtn.style.display = "block";
-                } else {
-                    scrollLeftBtn.style.display = "block";
-                    scrollRightBtn.style.display = "block";
-                }
-            }
-
-            scrollContainer.addEventListener("scroll", updateScrollButtons);
-        </script>
     </section>
 
 
